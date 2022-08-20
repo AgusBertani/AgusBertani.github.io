@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos titulos */
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 5%;
+
+}
+
+h2,
+li,
+p {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*MENU HEADER/ POSICION FIXER*/
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    right: 0%;
+    left: 0%;
+    background-color: white;
+    opacity: 0.6;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: all 1.3s;
+}
+
+header:hover {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*Menu / secciones html */
+.pru {
+    font-size: 25px;
+    display: flex;
+    margin-right: 45em;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.prueba {
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ebebeb;
+    margin: auto;
+}
+
+.prueba a {
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    color: #020202;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.prueba a::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #d87b23;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.prueba a:hover {
+    color: #000000;
+}
+
+
+.prueba a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Estilo body */
+body {
+    background-color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    background-image: url(../imagenes/comida-ingredientes_1220-4884.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*LOGO RINCON CASERO*/
+.imaGen {
+    width: 13%;
+    border-radius: 20rem;
+    margin-left: 45%;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    filter: drop-shadow(5px 0px 13px black);
+}
+
+
+/* SECCION NOSOTROS*/
+
+.Nosotros {
+    padding-left: 60%;
+    text-align: justify;
+    text-shadow: 0 0 black;
+    filter: drop-shadow(10px 10px 10px black);
+    color: rgb(0, 0, 0);
+    background-size: cover;
+    background-image: url(/rinconcaseropag12/imagenes/index.png);
+    background-position: center;
+    /* MARGIN/ EXTERNO*/
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* PADDING INTERIOR*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    /*BORDES / COLOR Y GROSOR*/
+    border-top: 3px black;
+    border-right: inset 4px rgb(0, 0, 0);
+    border-left: inset 4px black;
+    border-bottom: inset 3px black;
+}
+
+.tituloNosotros {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/* CARDS GRID*/
+.cards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+
+
+}
+
+.card__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+
+    gap: 70px;
+
+}
+
+.card {
+    filter: drop-shadow(5px 0px 13px black);
+    width: 100%;
+    background-color: bisque;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .card__imagen {
+    width: 100%;
+    height: 50%;
+
+
+}
+
+.card .card__div {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card .card__div {
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card2 {
+    filter: drop-shadow(5px 0px 13px black);
+    width: 100%;
+    background-color: bisque;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card2 .card__div {
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card3 {
+    filter: drop-shadow(5px 0px 13px black);
+    width: 100%;
+    background-color: bisque;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card3 .card__div {
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card4 {
+    filter: drop-shadow(5px 0px 13px black);
+    width: 100%;
+    background-color: bisque;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card4 .card__div {
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* SECCION MAPA*/
+/*.mapita {
+    background-color: antiquewhite;
+
+    width: 65%;
+    height: 40%;
+    margin-left: 40em;
+    margin-top: -8%;
+}*/
+
+/* CONTACTO/REDES SOCIALES Y FOOTER*/
+.contenedorFooter {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: bisque;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    gap: 30px;
+
+}
+
+.minilogodiv {
+    display: flex;
+    justify-content: center;
+}
+
+.minilogo {
+    width: 10%;
+    border-radius: 10rem;
+    margin-bottom: 2%;
+    margin-left: 0%;
+    margin-top: 5%;
+    filter: drop-shadow(5px 0px 13px black);
+}
+
+.colorFooter {
+    background-color: bisque;
+    margin-bottom: -10%;
+
+}
+
+.footer-info-datos {
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+}
