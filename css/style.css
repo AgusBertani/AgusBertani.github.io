@@ -21,7 +21,7 @@
 h1 {
     text-align: center;
     font-size: 3rem;
-    color: black;
+    color: white;
     font-family: 'Bebas Neue', cursive;
     margin-top: 5%;
 
@@ -125,7 +125,7 @@ header:hover {
     filter: drop-shadow(10px 10px 10px black);
     color: rgb(0, 0, 0);
     background-size: cover;
-    background-image: url(/rinconcaseropag12/imagenes/index.png);
+    background-image: url(../imagenes/comida-ingredientes_1220-4884.webp);
     background-position: center;
     /* MARGIN/ EXTERNO*/
     margin-bottom: 50px;
@@ -141,7 +141,9 @@ header:hover {
     border-left: inset 4px black;
     border-bottom: inset 3px black;
 }
-
+.texto1{
+    color: white;
+}
 .tituloNosotros {
     text-align: center;
     text-decoration: underline;
