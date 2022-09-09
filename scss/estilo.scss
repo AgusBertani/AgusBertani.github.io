@@ -1,3 +1,6 @@
+@import "fonts";
+@import "bg";
+@import "size";
 header {
     position: fixed;
     z-index: 100;
@@ -121,3 +124,38 @@ h1 {
         top: 0px; 
         }
 }       
+
+
+$vista: mobile;
+body{
+    @if $vista == desktop {
+        @media only screen and (min-width: 1024px){
+            h1{font-size: $font-size-lg;}
+            h3{font-size: 35px;}
+            input{ font-size:$font-size-md}
+        }
+
+    }
+    @else if $vista == mobile {
+        @media only screen and (min-width: 767px){
+            h1{font-size: $font-size-md;}
+            h3{font-size:25px;}
+            input{font-size: $font-size-sm;}
+        }
+    }
+}
+
+/* bucle each map*/
+$menu: (/*Declaramos nuestro mapa*/
+blue: blue
+green: green
+orange: orange
+
+
+);
+@each $item, $color in $menu {
+    .color-#{$item} {
+        background-color: $color;
+    }
+    
+}
