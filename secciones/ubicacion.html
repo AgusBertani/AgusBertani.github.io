@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,23 +11,43 @@
     <link rel="stylesheet" href="../estilos/estilos.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body>
+
+<body class="bodyubicacion">
     <nav class="navbar">
-        <ul class="pru">
+        <ul class="pru" style="padding: 8px">
             <li class="prueba"><a href="index.html">Inicio</a></li>
-            <li class="prueba"><a href="nosotros.html">Nosotros</a></li>
             <li class="prueba"><a href="servicios.html">Servicios</a></li>
-            <li class="prueba"><a href="ubicacion.html">Ubicacion</a></li>
+            <li class="prueba"><a href="ubicacion.html">Contactanos</a></li>
             <li class="prueba"><a href="./iniciarsesion.html">Usuario</a></li>
         </ul>
-
-
     </nav>
+
+
+    <!--FORMULARIO-->
+    <form action="">
+        <div class="form1">
+            <h1 style="text-align: center">Contactanos!</h1>
+            <div class="grupo">
+                <input type="text" name="" id="" required><span class="barra"></span>
+                <label>Nombre</label>
+            </div>
+            <div class="grupo">
+                <input type="email" name="" id="" required><span class="barra"></span>
+                <label>Email</label>
+            </div>
+            <div class="grupo">
+                <textarea name="" id="" rows="3" required></textarea><span class="barra"></span>
+                <label>Comentario</label>
+            </div>
+            <button type="submit" class="button1">Contactanos</button>
+
+
+        </div>
+    </form>
+<!--FIN DE FORMULARIO-->
+
+
 
 
     <footer id="contacto">
@@ -45,9 +66,9 @@
         </div>
         <div class="line"></div>
     </footer>
-
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/lightbox.js"></script>
 
 </body>
+
 </html>
