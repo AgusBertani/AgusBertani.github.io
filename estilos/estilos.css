@@ -783,20 +783,20 @@ textarea:focus~.barra::before {
 }
 
 .table__productos>img {
-    width: 9rem;
+    width: 13rem;
     object-fit: contain;
     border-radius: 6px;
     margin-right: 20px;
 }
 
 .table__cantidad>input {
-    width: 40px;
+    width: 70px;
     border: none;
     outline: 0;
     font-size: 16px;
     font-weight: 700;
     margin-right: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .hide,
